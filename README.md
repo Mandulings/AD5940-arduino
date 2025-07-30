@@ -156,7 +156,7 @@ Inside `loop()`, the AD5940 autonomously executes DAC updates and ADC sampling b
 
 ## Library Modification
 
-The **`AD5940_arduino.h`** library merges **`AD5940.h`** and **`SquareWaveVoltammetry.h`**, along with selected portions from **`ADICUP3029Port.c`** and **`AD5940Main.c`**, and has been adapted for the Arduino environment.
+The **`AD5940_arduino.h`** library merges `AD5940.h` and `SquareWaveVoltammetry.h`, along with selected portions from `ADICUP3029Port.c` and `AD5940Main.c`, and has been adapted for the Arduino environment.
 
 **Key Modifications:**
 
