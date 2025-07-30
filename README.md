@@ -31,8 +31,8 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
 
         - Arduino Nano BLE 33
         
-        ![image.png](attachment:5b19fdc8-29a0-4553-9ad2-53b0cfb50dc3:image.png)
-        
+        <img width="1634" height="976" alt="스크린샷 2025-07-29 135816" src="https://github.com/user-attachments/assets/f1e6f655-c813-4dda-835a-8990fda294f3" />
+
     
 2. Make sure that the jumpers on the following connectors are in the correct position.
     
@@ -43,7 +43,8 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
     | J10, J11 | C (PIN 5-6) | RE0, SE0 connected to USB port |
     - Jumper Description
         
-        ![image.png](attachment:2b0e92c4-115d-4b99-8063-82d715d80ee1:image.png)
+        <img width="1235" height="1332" alt="스크린샷 2025-07-29 134824" src="https://github.com/user-attachments/assets/f8b34986-abef-411a-80b2-33548cef64bf" />
+
         
 
 1. Connect each electrode to the corresponding USB cable.
@@ -56,11 +57,11 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
     | Green | Working Electrode | USB_3 |
     | Black | DE0 input | USB_4 |
 
-## 2️⃣ Software Configuration
 
-1. Download the files from the [Google Drive link](https://drive.google.com/drive/folders/1cERzdN7Los_VclbjiWB3Om9rC6Ka-7-b?usp=drive_link).
-2. Copy the folder `AD5940_arduino` into your Arduino libraries folder (Documents > Arduino > libraries). Once installed, you will be able to open the example code **`AD5940_SqaureWaveVoltammetry.ino`** from the Arduino IDE.
-3. The**`AD5940RampStructInit()`** function configures the main application parameters for generating the excitation signal and acquiring the measured data. You can modify the following parameters as needed to adjust the ramp characteristics.
+## 2️ Software Configuration
+
+1. Copy the folder `AD5940_arduino` into your Arduino libraries folder (Documents > Arduino > libraries). Once installed, you will be able to open the example code `AD5940_SqaureWaveVoltammetry.ino` from the Arduino IDE.
+2. The `AD5940RampStructInit()` function configures the main application parameters for generating the excitation signal and acquiring the measured data. You can modify the following parameters as needed to adjust the ramp characteristics.
 
 ```cpp
 	/* Step 2:Configure square wave signal parameters */
@@ -78,7 +79,8 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
 
 The table below explains the meaning of each parameter:
 
-![image.png](attachment:9c5d7aa8-747f-40ad-9b3b-480ff00febbe:image.png)
+<img width="1423" height="1245" alt="스크린샷 2025-07-29 144208" src="https://github.com/user-attachments/assets/47d41512-9afe-43b1-8208-c2cc087379b7" />
+
 
 ## 3️⃣ SWV Measurement & Transmission
 
@@ -98,7 +100,8 @@ The table below explains the meaning of each parameter:
 
 ## 🔍 Code Workflow
 
-![image.png](attachment:6ed47e07-1723-4831-b4c5-d409f03f4f43:image.png)
+<img width="552" height="711" alt="Schematic_Code" src="https://github.com/user-attachments/assets/a892ffe2-8284-4508-b4bf-f04862cffe61" />
+
 
 ### void setup()
 
@@ -134,8 +137,6 @@ During `setup()`, the MCU initializes communication with the AD5940, configures 
         | --- | --- | --- | --- | --- |
         | Sequence | SEQID_0 | SEQID_2 | SEQID_1 | SEQID_2 |
     
-    [DAC Update Method: `AppSWVSeqDACCtrlGen`()](https://www.notion.so/DAC-Update-Method-AppSWVSeqDACCtrlGen-240f690c099180048b18d67a3bc6f2ee?pvs=21)
-    
 
 ### void loop()
 
@@ -156,7 +157,7 @@ Inside `loop()`, the AD5940 autonomously executes DAC updates and ADC sampling b
         After advertising, `BLE.poll()` must be continuously called to maintain data transmission. Instead of using the `delay()` function, it is recommended to use a custom function like `BLEdelay()` to ensure the BLE connection remains active.
         
 
-## 🔍 Library Modification
+## Library Modification
 
 The **`AD5940_arduino.h`** library merges **`AD5940.h`** and **`SquareWaveVoltammetry.h`**, along with selected portions from **`ADICUP3029Port.c`** and **`AD5940Main.c`**, and has been adapted for the Arduino environment.
 
@@ -170,7 +171,7 @@ The **`AD5940_arduino.h`** library merges **`AD5940.h`** and **`SquareWaveVoltam
 - **Arduino Compatibility Fixes**
     - Replaced or removed C functions not supported by Arduino, such as `printf()`
 
-# 📎 References
+# References
 
 ### Datasheets & Schematics
 
