@@ -79,10 +79,11 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
 
 The table below explains the meaning of each parameter:
 
-<img width="1423" height="1245" alt="스크린샷 2025-07-29 144208" src="https://github.com/user-attachments/assets/47d41512-9afe-43b1-8208-c2cc087379b7" />
+<img width="1423" height="1100" alt="스크린샷 2025-07-29 144208" src="https://github.com/user-attachments/assets/7c42a6e3-df4a-4f67-9875-4724befbe5d6" />
 
 
-## 3️⃣ SWV Measurement & Transmission
+
+## 3️ SWV Measurement & Transmission
 
 1. Connect the Arduino to your computer and upload the code.
 * *Note: Sometimes, the code may pause at the `AD5940FrequencyMeasure();` function inside the `setup()` routine. If this happens, try unplugging and reconnecting the USB cable between the Arduino and the desktop.*
@@ -96,9 +97,9 @@ The table below explains the meaning of each parameter:
 
 ---
 
-# 📎 Advanced Explanation
+# Advanced Explanation
 
-## 🔍 Code Workflow
+## Code Workflow
 
 <img width="552" height="711" alt="Schematic_Code" src="https://github.com/user-attachments/assets/a892ffe2-8284-4508-b4bf-f04862cffe61" />
 
