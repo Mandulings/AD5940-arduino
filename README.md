@@ -1,16 +1,15 @@
 # AD5940-arduino
 
 <aside>
-💡
 
 This document is a guide for performing **Square Wave Voltammetry** (SWV) using the **EVAL-AD5940ELCZ** board controlled by an **Arduino Nano 33 BLE.**
 
 </aside>
 
 
-# 📎 How to run the measurement
+# How to run the measurement
 
-## 1️⃣ Hardware Setup
+## 1 Hardware Setup
 
 1. Connect the pins of the Arduino Nano 33 BLE and the EVAL-AD5940ELCZ as shown below.
     
@@ -27,9 +26,9 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
     | Interrupt | D2 | D2 |
     - Pinout Schematics
         - EVAL-AD5940ELCZ
-        
-        ![image.png](attachment:e1d856fa-30ca-4702-be6e-8293cdf6da00:1ae5db25-4486-4dc1-b7b9-25f20fe02982.png)
-        
+
+        <img width="680" height="467" alt="스크린샷 2025-07-29 140542" src="https://github.com/user-attachments/assets/ba8ca212-f9d8-4c67-be90-654d8acc4563" />
+
         - Arduino Nano BLE 33
         
         ![image.png](attachment:5b19fdc8-29a0-4553-9ad2-53b0cfb50dc3:image.png)
