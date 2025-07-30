@@ -7,7 +7,6 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
 
 </aside>
 
-**Content**
 
 # 📎 How to run the measurement
 
