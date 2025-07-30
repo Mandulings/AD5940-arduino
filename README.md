@@ -39,7 +39,7 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
     
     | **Connector** | **Position** | **Description** |
     | --- | --- | --- |
-    | J6 | B | Set to Network B to connect the 1kΩ || 3kΩ between RE0 and SE0 |
+    | J6 | B | Set to Network B to connect the 1kΩ, 3kΩ between RE0 and SE0 |
     | J10, J11 | C (PIN 5-6) | RE0, SE0 connected to USB port |
     - Jumper Description
         
