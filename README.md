@@ -9,7 +9,7 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
 
 # How to run the measurement
 
-## 1 Hardware Setup
+## 1) Hardware Setup
 
 1. Connect the pins of the Arduino Nano 33 BLE and the EVAL-AD5940ELCZ as shown below.
     
@@ -24,15 +24,12 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
     | MISO | D12 | D12 |
     | SCLK | D13 | D13 |
     | Interrupt | D2 | D2 |
+   
     - Pinout Schematics
-        - EVAL-AD5940ELCZ
+      
+![AD5940 Pinout](https://github.com/Mandulings/AD5940-arduino/blob/6f74176d3db2167d7b97d4673e16bd667c49f5bf/README_images/Pinout_EVAL-AD5940ELCZ.png "EVAL-AD5940ELCZ")
 
-        <img width="680" height="467" alt="스크린샷 2025-07-29 140542" src="https://github.com/user-attachments/assets/ba8ca212-f9d8-4c67-be90-654d8acc4563" />
-
-        - Arduino Nano BLE 33
-        
-        <img width="1634" height="976" alt="스크린샷 2025-07-29 135816" src="https://github.com/user-attachments/assets/f1e6f655-c813-4dda-835a-8990fda294f3" />
-
+![Arduino Pinout](https://github.com/Mandulings/AD5940-arduino/blob/6f74176d3db2167d7b97d4673e16bd667c49f5bf/README_images/Pinout_Arduino.png "Arduino Nano 33 BLE")
     
 2. Make sure that the jumpers on the following connectors are in the correct position.
     
@@ -54,7 +51,7 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
     | Black | DE0 input | USB_4 |
 
 
-## 2️ Software Configuration
+## 2️) Software Configuration
 
 1. Copy the folder `AD5940_arduino` into your Arduino libraries folder (Documents > Arduino > libraries). Once installed, you will be able to open the example code `AD5940_SqaureWaveVoltammetry.ino` from the Arduino IDE.
 2. The `AD5940RampStructInit()` function configures the main application parameters for generating the excitation signal and acquiring the measured data. You can modify the following parameters as needed to adjust the ramp characteristics.
@@ -75,11 +72,10 @@ This document is a guide for performing **Square Wave Voltammetry** (SWV) using 
 
 The table below explains the meaning of each parameter:
 
-<img width="1423" height="1100" alt="스크린샷 2025-07-29 144208" src="https://github.com/user-attachments/assets/7c42a6e3-df4a-4f67-9875-4724befbe5d6" />
+![Ramp parameters](https://github.com/Mandulings/AD5940-arduino/blob/6f74176d3db2167d7b97d4673e16bd667c49f5bf/README_images/RampParameters.png)
 
 
-
-## 3️ SWV Measurement & Transmission
+## 3️) SWV Measurement & Transmission
 
 1. Connect the Arduino to your computer and upload the code.
 * *Note: Sometimes, the code may pause at the `AD5940FrequencyMeasure();` function inside the `setup()` routine. If this happens, try unplugging and reconnecting the USB cable between the Arduino and the desktop.*
@@ -97,8 +93,7 @@ The table below explains the meaning of each parameter:
 
 ## Code Workflow
 
-<img width="552" height="711" alt="Schematic_Code" src="https://github.com/user-attachments/assets/a892ffe2-8284-4508-b4bf-f04862cffe61" />
-
+![Code Workflow](https://github.com/Mandulings/AD5940-arduino/blob/6f74176d3db2167d7b97d4673e16bd667c49f5bf/README_images/Schematic_Code.png)
 
 ### void setup()
 
