@@ -2,10 +2,18 @@
 
 <aside>
 
-This document is a guide for performing **Square Wave Voltammetry** (SWV) using the **EVAL-AD5940ELCZ** board controlled by an **Arduino Nano 33 BLE.**
+## License
+
+This project is based on the original AD5940 library by Analog Devices, Inc.  
+(© 2019 Analog Devices, Inc. All rights reserved)
+
+This version includes modifications for compatibility with Arduino Nano 33 BLE  
+and the EVAL-AD5940ELCZ evaluation board.
+
+All original licensing terms remain in effect.  
+See the LICENSE file for full details.
 
 </aside>
-
 
 # How to run the measurement
 
