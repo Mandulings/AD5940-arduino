@@ -44,8 +44,8 @@ See the LICENSE file for full details.
     
     | **Connector** | **Position** | **Description** |
     | --- | --- | --- |
-    | J6 | B | Set to Network B to connect the 1kΩ, 3kΩ between RE0 and SE0 |
-
+    | J6 | B | Connect network B to CE0, RE0 and SE0 |
+    | J10, 11 | C (5-6) | Connect RE0, SE0 to the USB cable |
         
 
 1. Connect each electrode to the corresponding USB cable.
